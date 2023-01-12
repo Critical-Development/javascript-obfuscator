@@ -13,32 +13,32 @@ export type ObfuscatorOptions = TInputOptions;
 
 export interface ObfuscationResult extends IObfuscationResult {}
 
-/**
- * @param {string} sourceCode
- * @param {ObfuscatorOptions} inputOptions
- * @returns {ObfuscatedCode}
- */
+
+ @param {string} sourceCode
+ @param {ObfuscatorOptions} inputOptions
+ @returns {ObfuscatedCode}
+ 
 export declare function obfuscate (sourceCode: string, inputOptions?: ObfuscatorOptions): ObfuscationResult;
 
-/**
- * @param {TSourceCodesObject} sourceCodesObject
- * @param {TInputOptions} inputOptions
- * @returns {TObfuscationResultsObject<TSourceCodesObject>}
- */
+
+  @param {TSourceCodesObject} sourceCodesObject
+  @param {TInputOptions} inputOptions
+  @returns {TObfuscationResultsObject<TSourceCodesObject>}
+ 
 export declare function obfuscateMultiple <TSourceCodesObject extends TDictionary<string>> (
     sourceCodesObject: TSourceCodesObject,
     inputOptions?: TInputOptions
 ): TObfuscationResultsObject<TSourceCodesObject>;
 
-/**
- * @param {TOptionsPreset} optionsPreset
- * @returns {TInputOptions}
- */
+
+@param {TOptionsPreset} optionsPreset
+@returns {TInputOptions}
+
 export declare function getOptionsByPreset (optionsPreset: TOptionsPreset): TInputOptions;
 
-/**
- * @type {string}
- */
+
+@type {string}
+
 export declare const version: string;
 
 module.exports = JavaScriptObfuscator;
