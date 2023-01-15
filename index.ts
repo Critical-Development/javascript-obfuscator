@@ -4,14 +4,9 @@ import { TDictionary } from './src/types/TDictionary';
 import { TInputOptions } from './src/types/options/TInputOptions';
 import { TObfuscationResultsObject } from './src/types/TObfuscationResultsObject';
 import { TOptionsPreset } from './src/types/options/TOptionsPreset';
-
 import { IObfuscationResult } from './src/interfaces/source-code/IObfuscationResult';
-
 import { JavaScriptObfuscator } from './src/JavaScriptObfuscatorFacade';
 
-export type ObfuscatorOptions = TInputOptions;
-
-export interface ObfuscationResult extends IObfuscationResult {}
 
 
  @param {string} sourceCode
